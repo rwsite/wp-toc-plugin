@@ -1,0 +1,93 @@
+/**
+ * Table of contents
+ */
+.table-of-contents {
+  margin: 1.25rem 0 1.25rem 0;
+  border: 1px solid #dee2e6;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.table-of-contents .accordion-header .accordion-button {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.table-of-contents .accordion-content {
+  margin-top: 0;
+  padding-top: 10px;
+}
+.table-of-contents ol {
+  margin: 0 20px 0;
+  padding: 5px 0 15px 0;
+  list-style: none;
+}
+.table-of-contents ol li {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.table-of-contents ol li :before {
+  display: inline-block;
+  content: counter(point) ". ";
+  opacity: 0.5;
+  margin-right: 5px;
+  margin-left: 0;
+}
+.table-of-contents ol .level-1 {
+  counter-increment: point;
+  counter-reset: sublist;
+  padding-top: 0.4em;
+  padding-bottom: 0.2em;
+  font-size: 1em;
+}
+.table-of-contents ol .level-1 :before {
+  width: 1.6em;
+}
+.table-of-contents ol .level-2 {
+  counter-reset: sublist3;
+  font-size: 0.92em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  margin-left: 30px;
+}
+.table-of-contents ol .level-2 :before {
+  content: counter(point) "." counter(sublist) ". ";
+  counter-increment: sublist;
+  width: 2.5em;
+}
+.table-of-contents ol .level-3 {
+  counter-reset: sublist4;
+  font-size: 0.88em;
+  margin-top: 0.3em;
+  margin-bottom: 0.7em;
+  margin-left: 70px;
+}
+.table-of-contents ol .level-3 :before {
+  content: counter(point) "." counter(sublist) "." counter(sublist3) ". ";
+  counter-increment: sublist3;
+  width: 3.3em;
+}
+.table-of-contents ol .level-4 {
+  counter-reset: sublist5;
+  font-size: 0.8em;
+  margin-top: 0.3em;
+  margin-bottom: 0.7em;
+  margin-left: 120px;
+}
+.table-of-contents ol .level-4 :before {
+  content: counter(point) "." counter(sublist) "." counter(sublist3) "." counter(sublist4) ". ";
+  counter-increment: sublist4;
+  width: 3.8em;
+}
+.table-of-contents ol .level-5 {
+  counter-reset: sublist6;
+  font-size: 0.8em;
+  margin-top: 0.3em;
+  margin-bottom: 0.7em;
+  margin-left: 175px;
+}
+.table-of-contents ol .level-5 :before {
+  content: counter(point) "." counter(sublist) "." counter(sublist3) "." counter(sublist4) "." counter(sublist5) ". ";
+  counter-increment: sublist5;
+  width: 4.8em;
+}
+
+/*# sourceMappingURL=toc.css.map */
