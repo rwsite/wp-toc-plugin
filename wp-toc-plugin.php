@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Post Table of Content
  * Description: Plugin make auto insert toc to post content. !Required add css to theme. Also, you can use: <code>&lt;!--insert-toc--&gt;</code> or <code>[toc]</code>
- * Version: 1.0.0
+ * Version: 1.0.1
  * Text Domain: toc
  * Domain Path: /languages
  * Author: Aleksey Tikhomirov
@@ -103,7 +103,7 @@ function insert_table_of_contents($content) {
 
         // generate links for each heading element
         // each link points to an anchor
-        $link_list .= "<li class='level-" . $modified . "'><a href='#$id' >" . $heading_results[4][$i] . "</li></a>";
+        $link_list .= "<li class='level-" . $modified . "'><a href='#$id' >" . strip_tags($heading_results[4][$i]) . "</li></a>";
     }
 
     // opening nav tag
