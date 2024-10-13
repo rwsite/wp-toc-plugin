@@ -3,6 +3,7 @@
   "description": "Plugin make auto insert toc to post content. !Required add css to theme. WordPress plugin.",
   "minimum-stability": "stable",
   "license": "proprietary",
+  "type": "wordpress-plugin",
   "authors": [
     {
       "name": "Aleksei Tikhomirov",
