@@ -17,7 +17,7 @@
 
 defined( 'ABSPATH' ) or die( 'Nothing here!' );
 
-add_action( 'plugins_loaded', function () {
+add_action( 'init', function () {
     load_plugin_textdomain('toc', false, dirname(plugin_basename(__FILE__)) . '/languages');
 });
 
